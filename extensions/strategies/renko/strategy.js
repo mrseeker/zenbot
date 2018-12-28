@@ -1,5 +1,5 @@
 var z = require('zero-fill'),
-  n = require('numbro')
+    n = require('numbro')
 
 module.exports = {
   name: 'renko',
