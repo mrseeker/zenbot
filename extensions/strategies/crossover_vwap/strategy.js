@@ -50,14 +50,14 @@ module.exports = {
           s.acted_on_trend = false
         }
         s.trend = 'up'
-        s.signal = !s.acted_on_trend ? 'sell' : null
+        s.signal = !s.acted_on_trend ? 'buy' : null
       },
       trendDown = function(s){
         if (s.trend !== 'down') {
           s.acted_on_trend = false
         }
         s.trend = 'down'
-        s.signal = !s.acted_on_trend ? 'buy' : null
+        s.signal = !s.acted_on_trend ? 'sell' : null
       }
 
     if(emagreen && smared && smapurple && s.period.vwap){
