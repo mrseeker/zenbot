@@ -15,7 +15,6 @@
   "scripts": {
     "lint": "eslint **/*.js",
     "lint-fix": "eslint **/*.js --fix",
-    "precommit": "lint-staged",
     "test": "jasmine test/**/**.test.js",
     "test-one": "jasmine $PATH_TO_TEST",
     "postinstall": "node post_install.js"
@@ -122,5 +121,10 @@
   },
   "engines": {
     "node": "^8.3.0 || ^9.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
